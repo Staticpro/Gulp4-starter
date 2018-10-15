@@ -26,4 +26,15 @@ module.exports = function () {
             }))
             .pipe($.gulp.dest('./build/static/img/svg/'));
     });
+
+    $.gulp.task('svg:copy', () => {
+        return $.gulp.src('./dev/static/img/general/**/*.svg')
+            .pipe($.gp.svgmin({
+                js2svg: {
+                    pretty: true
+                }
+            }))
+            .pipe($.gp.replace('&gt;', '>'))
+            .pipe($.gulp.dest('./build/static/img/general/'));
+    });
 };

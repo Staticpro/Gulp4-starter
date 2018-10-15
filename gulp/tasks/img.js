@@ -11,9 +11,4 @@ module.exports = function () {
             .pipe($.gp.tinypng('gwGPs4kEI8kWCCUq1DpdvcDEU9cSzA6I'))
             .pipe($.gulp.dest('./build/static/img/'));
     });
-
-    $.gulp.task('svg:copy', () => {
-        return $.gulp.src('./dev/static/img/general/*.svg')
-            .pipe($.gulp.dest('./build/static/img/general/'));
-    });
 };
