@@ -1,18 +1,23 @@
-body {
-  background-color: #fff;
+@import "config/fonts";
+@import "config/vars";
+@import "config/mixins";
+@import "config/libs";
+
+html {
+  font-size: $baseFontSize;
+  height: 100%;
 }
 
 body {
-  color: #000;
-}
-
-h1 {
-  color: blue;
+  font-family: $regularFont;
+  height: 100%;
 }
 
 
 
+//Модули
+@import "modules/modules";
 
-
-
-@import "libs";
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index';
