@@ -4,9 +4,7 @@ module.exports = function () {
     $.gulp.task('pug', function(){
         return $.gulp.src('./dev/pug/pages/*.pug')
         .pipe($.gp.pug({
-            locals : {
-                content: JSON.parse($.fs.readFileSync('./data/content.json', 'utf8')),
-            },
+            locals : JSON.parse($.fs.readFileSync('./data/content.json', 'utf8')),
             pretty: true
         }))
         .on('error', $.gp.notify.onError(function (error){

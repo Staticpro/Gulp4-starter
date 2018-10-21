@@ -14,7 +14,7 @@
   color: #ffffff;
 }
 
-@mixin view-port($width: $mobile-width) {
+@mixin view-port($width) {
   min-width: $width;
   margin: 0 auto;
 }
@@ -24,4 +24,32 @@
   flex-direction: $dir;
   justify-content: center;
   align-items: center;
+}
+
+@mixin center($axis: 'both') {
+  position: absolute;
+
+  @if $axis == 'both' {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @if $axis == 'x' {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if $axis == 'y' {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }

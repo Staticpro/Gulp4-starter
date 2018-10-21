@@ -1,11 +1,15 @@
 // Шапка
 @import 'header/header';
 
-// Футера
-@import 'footer/footer';
+// Sections
+@import 'sections/about';
+@import 'sections/title';
 
 // Навигация
 @import 'navigation/nav';
+
+// Футера
+@import 'footer/footer';
 
 //Кнопки
 @import "buttons/buttons";

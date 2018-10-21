@@ -13,20 +13,6 @@ html(lang="ru")
     block title
 
   body
-
-    .wrapper
-      section.section.hero
-        ul.socials__list
-          each item in ['vk', 'github', 'in']
-            li.socials__item
-              a(href="#").socials__link
-                svg(class="socials__icon-" + item)
-                  use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
-        a(href="").hamburger
-        a(href="").down-arrow
-      section.section
-      section.section
-
     block content
 
 

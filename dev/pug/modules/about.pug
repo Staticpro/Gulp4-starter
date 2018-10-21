@@ -1,0 +1,42 @@
+section.section.about
+  .about__left
+    svg(
+      viewBox="0 0 1000 100"
+      preserveAspectRatio="none"
+      class="about__triangle about__triangle--white")
+      polygon(points="0,0 0,100 1000,100")
+    .about__section-title.title(style="background-image: url(\"static/img/general/about_header.png\")")
+      | Обо мне
+    .user-about
+      .user-about__picture
+      .user-about__title.subtitle
+        | Кто я
+      .user-about__text
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
+  .about__right
+    svg(
+      viewBox="0 0 1000 100"
+      preserveAspectRatio="none"
+      class="about__triangle about__triangle--beige")
+      polygon(points="0,100 1000,100 1000,0")
+    .about-data
+      .about-data__description
+        .about-data__title
+          .subtitle
+            | Чем я могу быть вам полезен
+        .about-data__text
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, itaque?
+      .about-data__content
+        ul.skills
+          each skill in skills
+            each skillsArray, skillName in skill
+              li.skills__item
+                .skill-section
+                  .skill-section__title= skillName
+                  ul.skill-section__list
+                    each skillTitle in skillsArray
+                      li.skills-section__item
+                        .skill
+                          svg.skill__circle
+                            .skill__name= skillTitle

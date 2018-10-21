@@ -1,0 +1,33 @@
+.about {
+  @extend %clearfix;
+
+  &__left {
+    float: left;
+    width: 50%;
+    background-color: $cararra;
+    position: relative;
+  }
+
+  &__right {
+    float: left;
+    width: 50%;
+    background-color: $beige;
+    position: relative;
+  }
+
+  &__triangle {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+
+    &--beige {
+      fill: $beige;
+    }
+
+    &--white {
+      fill: $cararra;
+    }
+  }
+}
+

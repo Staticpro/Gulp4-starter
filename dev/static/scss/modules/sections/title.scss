@@ -1,0 +1,28 @@
+.title {
+  color: $outerSpace;
+  font-size: 63px;
+  font-family: $titleFont;
+  padding: 45px 80px;
+  position: relative;
+  display: inline-block;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &:after, &:before {
+    content: '';
+    display: block;
+    @include center(y);
+    background-color: rgba($outerSpace, .2);
+    width: 22px;
+    height: 5px;
+  }
+
+  &:after {
+    right: 40px;
+  }
+
+  &:before {
+    left: 40px;
+  }
+}

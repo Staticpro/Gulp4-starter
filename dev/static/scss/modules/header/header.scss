@@ -1,0 +1,31 @@
+.hero {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+
+  &__down-arrow {
+    @include center(x);
+    bottom: 40px;
+  }
+
+  &__down-arrow-icon {
+    width: 26px;
+    height: 16px;
+    fill: $heather;
+    background-color: transparent;
+  }
+
+  &__title {
+    @include center(y);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title-img {
+    display: block;
+  }
+
+  &__user-block {
+    @include center();
+  }
+}

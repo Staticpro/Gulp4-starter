@@ -1,0 +1,23 @@
+section.section.hero
+  .hero__bg
+    img(src="static/img/general/portfolio.jpg").hero__bg-img
+  ul.socials__list
+    each item in ['vk', 'github', 'in']
+      li.socials__item
+        a(href="#").socials__link
+          svg(class="socials__icon-" + item)
+            use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
+  a(href="").hamburger
+  a(href="").hero__down-arrow
+    svg.hero__down-arrow-icon
+      use(xlink:href="static/img/svg/symbol/sprite.svg#arrow_down")
+  .hero__title
+    img(src="static/img/general/portfolio_header.png").hero__title-img
+    //svg.hero__icon
+      //use(xlink:href="static/img/svg/symbol/sprite.svg#portfolio_header")
+    .hero__user-block.user
+      .user__photo
+        .user-photo__avatar
+         img(src="static/img/content/user.jpg").user__photo-img
+      .user__name Static Pro
+      .user__desc My site
