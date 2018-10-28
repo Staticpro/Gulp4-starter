@@ -13,7 +13,14 @@ html(lang="ru")
     block title
 
   body
-    block content
+    .wrapper
+
+      .menu
+        ul.menu__list
+          each menuItem in ['Мои работы', 'Блог', 'Обо мне', 'Авторизация']
+            li.menu__item
+              a(href="" class="menu__link") #{menuItem}
+      block content
 
 
 

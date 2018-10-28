@@ -1,0 +1,44 @@
+.hamburger {
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  &__icon {
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 2px;
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 10px;
+    }
+  }
+}
+.menu-close {
+  position: absolute;
+  display: none;
+  top: 3%;
+  right: 2%;
+  width: 40px;
+  height: 35px;
+  &:after, &:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}

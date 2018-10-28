@@ -9,6 +9,10 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+  &--about {
+    background-image: url("../img/general/about_header.png");
+  }
+
   &:after, &:before {
     content: '';
     display: block;

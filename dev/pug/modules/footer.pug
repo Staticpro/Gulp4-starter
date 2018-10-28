@@ -1,0 +1,18 @@
+section.footer
+  .footer__top
+    .footer__nav
+      ul.footer__nav-list
+        each menuItem in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+          li.footer__nav-item
+            a(href="" class="footer__nav-link") #{menuItem}
+    ul.internet.footer__internet
+      each item in ['vk2', 'github2', 'in2']
+        li.internet__item
+          a(href="#").internet__link
+            svg(class="community__icon community__icon-" + item)
+              use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
+  .footer__boottom
+    p.footer__text
+      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, totam.
+    p.footer__copyright
+      | Lorem ipsum dolor sit amet.

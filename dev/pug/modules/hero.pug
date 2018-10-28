@@ -1,13 +1,17 @@
 section.section.hero
   .hero__bg
     img(src="static/img/general/portfolio.jpg").hero__bg-img
-  ul.socials__list
+  ul.community
     each item in ['vk', 'github', 'in']
-      li.socials__item
-        a(href="#").socials__link
-          svg(class="socials__icon-" + item)
+      li.community__item
+        a(href="#").community__link
+          svg(class="community__icon community__icon-" + item)
             use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
   a(href="").hamburger
+    .hamburger__icon
+    .hamburger__icon
+    .hamburger__icon
+  a(href="").menu-close
   a(href="").hero__down-arrow
     svg.hero__down-arrow-icon
       use(xlink:href="static/img/svg/symbol/sprite.svg#arrow_down")
