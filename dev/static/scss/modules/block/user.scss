@@ -1,4 +1,7 @@
 .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__photo {
     width: 141px;
     height: 141px;
@@ -12,4 +15,16 @@
     height: auto;
     display: block;
   }
+  &__name {
+    font-size: 35px;
+    font-family: $mediumFont;
+    color: #ffffff;
+  }
+  &__desc {
+    font-family: $regularFont;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 100;
+  }
+
 }

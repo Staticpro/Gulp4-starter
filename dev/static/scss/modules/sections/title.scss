@@ -30,3 +30,25 @@
     left: 40px;
   }
 }
+.subtitle {
+  font-family: $titleFont;
+  font-size: 35px;
+  color: $fiord;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  &:before, &:after {
+    content: '';
+    display: block;
+    @include center(y);
+    background-color: rgba($outerSpace, .2);
+    width: 22px;
+    height: 5px;
+  }
+  &:before {
+    left: -57px;
+  }
+  &:after {
+    right: -57px;
+  }
+}

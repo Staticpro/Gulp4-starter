@@ -13,8 +13,14 @@ body {
 .wrapper {
   width: 1200px;
   min-height: 100%;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 ul {

@@ -5,15 +5,19 @@ section.section.about
       preserveAspectRatio="none"
       class="about__triangle about__triangle--white")
       polygon(points="0,0 0,100 1000,100")
-    .about__section-title.title.title--about
-      | Обо мне
-    .user-about
-      .user-about__picture
-      .user-about__title.subtitle
-        | Кто я
-      .user-about__text
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
+    .about__left-content
+      .about__section-title
+        .title.title--about
+          | Обо мне
+      .about__user
+        .about__user-picture
+          img(src="static/img/content/user-big.jpg")
+        .about__user-title
+          .subtitle
+            | Кто я
+        .about__user-text
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus.
   .about__right
     svg(
       viewBox="0 0 1000 100"
