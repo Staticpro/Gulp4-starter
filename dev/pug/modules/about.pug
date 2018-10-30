@@ -24,23 +24,22 @@ section.section.about
       preserveAspectRatio="none"
       class="about__triangle about__triangle--beige")
       polygon(points="0,100 1000,100 1000,0")
-    .about-data
-      .about-data__description
-        .about-data__title
+    .about__right-content
+      .about__data-description
+        .about__data-title
           .subtitle
-            | Чем я могу быть вам полезен
+            | Чем я могу быть #[br] вам полезен
         .about-data__text
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, itaque?
-      .about-data__content
-        ul.skills
-          each skill in skills
-            each skillsArray, skillName in skill
-              li.skills__item
-                .skill-section
-                  .skill-section__title= skillName
-                  ul.skill-section__list
-                    each skillTitle in skillsArray
-                      li.skills-section__item
-                        .skill
-                          svg.skill__circle
-                            .skill__name= skillTitle
+      ul.skills
+        each skill in skills
+          each skillsArray, skillName in skill
+            li.skills__item
+              .skill-section
+                .skill-section__title= skillName
+                ul.skill-section__list
+                  each skillTitle in skillsArray
+                    li.skills-section__item
+                      .skill
+                        svg.skill__circle
+                          .skill__name= skillTitle

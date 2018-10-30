@@ -33,8 +33,10 @@
 .subtitle {
   font-family: $titleFont;
   font-size: 35px;
+  line-height: 41px;
   color: $fiord;
   text-transform: uppercase;
+  text-align: center;
   position: relative;
   display: inline-block;
   &:before, &:after {
