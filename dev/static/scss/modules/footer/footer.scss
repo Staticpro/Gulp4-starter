@@ -1,5 +1,8 @@
 .footer {
-
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(#282828, .8);
   &__top {
     border-bottom: 1px solid #7d8284;

@@ -1,8 +1,5 @@
 .map {
   position: relative;
-  &__bg {
-    height: auto;
-  }
   &__contacts {
     @include center();
   }
