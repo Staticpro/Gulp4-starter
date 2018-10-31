@@ -1,0 +1,32 @@
+.contacts {
+  padding: 35px 40px 40px 40px;
+  width: 300px;
+  background: rgba(#fcfcfc, .8);
+  border-radius: 5px;
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    font-family: $mediumFont;
+    font-size: 16px;
+  }
+  &__icon {
+    display: block;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    fill: $green;
+  }
+}

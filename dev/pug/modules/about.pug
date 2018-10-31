@@ -41,5 +41,7 @@ section.section.about
                   each skillTitle in skillsArray
                     li.skills-section__item
                       .skill
-                        svg.skill__circle
-                          .skill__name= skillTitle
+                        svg(viewbox="0 0 100 100" preserveAspectRatio="none").skill__circle
+                          circle(cx="50" cy="50" r="40").skill__circle-under
+                          circle(cx="50" cy="50" r="40").skill__circle-above
+                        .skill__name= skillTitle

@@ -32,9 +32,6 @@
     margin-top: -60px;
   }
   &__user-picture {
-    width: 445px;
-    height: 390px;
-    overflow: hidden;
     margin-bottom: 30px;
   }
   &__user-title {
@@ -50,6 +47,8 @@
   }
   &__right-content {
     padding: 0 10px 0 40px;
+  }
+  &__data-description {
     margin-bottom: 50px;
   }
   &__data-title {

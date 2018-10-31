@@ -4,12 +4,15 @@
 // Sections
 @import 'sections/about';
 @import 'sections/title';
+@import 'sections/map';
 
 
 // Blocks
 @import "block/user";
 @import "block/small-block";
 @import "block/community";
+@import "block/skills";
+@import "block/contacts";
 
 // Навигация
 @import 'navigation/nav';

@@ -1,13 +1,13 @@
 {
   "skills" : [
     {
-      "Frontend" : [1, 2, 3]
+      "Frontend" : ["HTML", "CSS3", "Js"]
     },
     {
-      "Backend" : [3, 4, 5]
+      "Backend" : ["php", "mySQL", "node.js", "MongoDB"]
     },
     {
-      "Workflow" : [6, 7, 8]
+      "Workflow" : ["Git", "Gulp", "Bower"]
     }
   ]
 }

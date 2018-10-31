@@ -1,0 +1,19 @@
+.map {
+  position: relative;
+  &__bg {
+    height: auto;
+  }
+  &__contacts {
+    @include center();
+  }
+  &__flag {
+    position: absolute;
+    bottom: 48%;
+    right: 14%;
+  }
+  &__flag-icon {
+    width: 44px;
+    height: 44px;
+    fill: $green;
+  }
+}
