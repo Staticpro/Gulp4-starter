@@ -1,0 +1,21 @@
+section.section.article
+    .article__col-left
+        .article__menu
+            .submenu
+                ul.submenu__list
+                    each subMenuItem in subMenuItems
+                        li.submenu__item
+                            a(href="" class=".submenu__link") #{subMenuItem}
+    .article__col-right
+        .article__content
+            ul.article__list
+                li.article__item
+                    .article__title
+                        | Самаое важное в SASS
+                    .article__date 26.10.2018
+                    p | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam natus optio quasi. Cumque, odio.
+                li.article__item
+                    .article__title
+                        | Приёмы в вёрстке без которых не обходится ни один сайт
+                    .article__date 26.10.2018
+                    p | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam natus optio quasi. Cumque, odio.
