@@ -1,0 +1,26 @@
+.blog-header {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  &__title {
+    @include center(x);
+    top: 48%;
+  }
+  &__user-block {
+    @include center(x);
+    top: -50%;
+  }
+  &__triangle {
+    fill: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0%;
+    }
+  }
+
+}

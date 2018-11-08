@@ -2,6 +2,11 @@
   height: 600px;
   overflow: hidden;
   position: relative;
+  &__community {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+  }
 
   &__down-arrow {
     @include center(x);

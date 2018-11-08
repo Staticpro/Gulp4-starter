@@ -1,34 +1,33 @@
 section.section.blog-header
-    img(src="static/img/general/blog-header.jpg")
-    ul.community
-        each item in ['vk', 'github', 'in']
-            li.community__item
-                a(href="#").community__link
-                    svg(class="community__icon community__icon-" + item)
-                        use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
-    a(href="").hamburger
-        .hamburger__icon
-        .hamburger__icon
-        .hamburger__icon
-    a(href="").menu-close
-    .blog-title
-        img(src="static/img/general/blog-header.png")
-        .blog__user-block
-            .user
-                .user__photo
-                    img(src="static/img/content/user.jpg").user__photo-img
-                .user__name Статик Про
-                .user__desc My site
-    a(href="").hero__down-arrow
-        svg.hero__down-arrow-icon
-            use(xlink:href="static/img/svg/symbol/sprite.svg#arrow_down")
-    svg(
-    viewBox="0 0 1000 100"
-    preserveAspectRatio="none"
-    class="blog__triangle blog__triangle--left")
-        polygon(points="0,0 0,100 1000,100")
-    svg(
-    viewBox="0 0 1000 100"
-    preserveAspectRatio="none"
-    class="blog__triangle blog__triangle--right")
-        polygon(points="0,100 1000,100 1000,0")
+	.blog-header__bg
+		img(src="static/img/general/blog-header.jpg")
+	ul.community
+		each item in ['vk', 'github', 'in']
+			li.community__item
+				a(href="#").community__link
+					svg(class="community__icon community__icon-" + item)
+						use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
+	a(href="").hamburger
+		.hamburger__icon
+		.hamburger__icon
+		.hamburger__icon
+	a(href="").menu-close
+	.blog-header__title
+		img(src="static/img/general/blog-header.png")
+		.blog-header__user-block.user
+			.user__photo
+				img(src="static/img/content/user.jpg").user__photo-img
+			.user__title
+				.subtitle.subtitle--white.subtitle--big
+					| Блог
+			.user__blog-desc Статьи, которые я написал
+	svg(
+	viewBox="0 0 1000 100"
+	preserveAspectRatio="none"
+	class="blog-header__triangle blog-header__triangle--left")
+		polygon(points="0,0 0,100 1000,100")
+	svg(
+	viewBox="0 0 1000 100"
+	preserveAspectRatio="none"
+	class="blog-header__triangle blog-header__triangle--right")
+		polygon(points="0,100 1000,100 1000,0")

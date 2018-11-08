@@ -39,6 +39,12 @@
   text-align: center;
   position: relative;
   display: inline-block;
+  &--white {
+    color: #ffffff;
+  }
+  &--big {
+    font-size: 63px;
+  }
   &:before, &:after {
     content: '';
     display: block;

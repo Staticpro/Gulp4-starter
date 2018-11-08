@@ -1,12 +1,13 @@
 section.section.hero
   .hero__bg
     img(src="static/img/general/portfolio.jpg").hero__bg-img
-  ul.community
-    each item in ['vk', 'github', 'in']
-      li.community__item
-        a(href="#").community__link
-          svg(class="community__icon community__icon-" + item)
-            use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
+  .hero__community
+    ul.community
+      each item in ['vk', 'github', 'in']
+        li.community__item
+          a(href="#").community__link
+            svg(class="community__icon community__icon-" + item)
+              use(xlink:href="static/img/svg/symbol/sprite.svg#" + item)
   a(href="").hamburger
     .hamburger__icon
     .hamburger__icon

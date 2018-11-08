@@ -1,0 +1,54 @@
+include ../mixins
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(content="" name="author")
+		meta(content="" name="description")
+		meta(content="" name="keywords")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		link(rel='stylesheet' href="static/css/main.css")
+
+		block title
+			title Страница ввода данных
+
+	body
+		.wrapper
+			section.section.enter
+				.enter__bg
+					img(src="static/img/general/login-bg.jpg")
+				.enter__block
+					.enter__title
+						.subtitle Авторизируйтесь
+					form.enter__form
+						.enter__text-group
+							input.enter__input(type="text", placeholder="Логин" name="Login")
+							span.enter__input-icons
+								svg.enter__input-icon
+									use(xlink:href="static/img/svg/symbol/sprite.svg#login")
+						.enter__text-group
+							input.enter__input(type="password", placeholder="Пароль" name="Password")
+							span.enter__input-icons
+								svg.enter__form-icon
+									use(xlink:href="static/img/svg/symbol/sprite.svg#password")
+						.enter__form-group
+							input#cb.enter__checkbox(type="checkbox" value="human")
+							label(for='cb') Я человек
+						.enter__form-group
+							fieldset.enter__radio-fieldset
+								legend.enter__radio-legend Я человек
+									input#rb1.enter__radio(type="radio" name="robot" value="yes")
+									label(for='rb1') Да
+									input#rb2.enter__radio(type="radio" name="robot" value="no")
+									label(for='rb2') Нет
+						.enter__buttons
+							a(href="").button На главную
+							button.button(type="submit") Войти
+				.enter__copyright
+					p Static Pro site. All rights received
+
+
+
+	scripts(src="static/js/libs.min.js")
+	scripts(src="static/js/main.js")

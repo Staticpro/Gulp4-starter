@@ -1,5 +1,7 @@
 .user {
   display: flex;
+  flex: 1 0 220px;
+  min-width: 220px;
   flex-direction: column;
   align-items: center;
   &__photo {
@@ -26,5 +28,10 @@
     color: #ffffff;
     font-weight: 100;
   }
-
+  &__blog-desc {
+    font-family: $regularFont;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 100;
+  }
 }

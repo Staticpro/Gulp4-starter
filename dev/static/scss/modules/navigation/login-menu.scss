@@ -1,0 +1,20 @@
+.login-menu {
+  overflow: hidden;
+  &__list {
+    display: flex;
+    width: 100%;
+  }
+  &__item {
+    border-right: 2px solid rgba($carribianGreen, .3);
+  }
+  &__link {
+    display: block;
+    background-color: rgba($carribianGreen, .6);
+    line-height: 45px;
+    padding: 0 31px;
+    text-decoration: none;
+    font-family: $mediumFont;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}

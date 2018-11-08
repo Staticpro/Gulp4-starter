@@ -1,11 +1,14 @@
 // Шапка
 @import 'header/header';
+@import 'header/blog-header';
 
 // Sections
 @import 'sections/about';
 @import 'sections/title';
 @import 'sections/map';
-
+@import 'sections/article';
+@import 'sections/login';
+@import 'sections/enter';
 
 // Blocks
 @import "block/user";
@@ -13,9 +16,11 @@
 @import "block/community";
 @import "block/skills";
 @import "block/contacts";
+@import "block/user-login";
 
 // Навигация
 @import 'navigation/nav';
+@import 'navigation/login-menu';
 
 // Футера
 @import 'footer/footer';

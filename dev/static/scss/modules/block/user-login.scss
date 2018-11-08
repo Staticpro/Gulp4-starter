@@ -1,0 +1,30 @@
+.user-login {
+  display: flex;
+  flex: 1 0 380px;
+  min-width: 380px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.85);
+  &__img {
+    width: 141px;
+    height: 141px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  &__name {
+    font-family: $mediumFont;
+    font-size: 28px;
+    color: $fiord;
+  }
+  &__desc {
+    color: $green;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  &__socials {
+    margin-bottom: 40px;
+  }
+}

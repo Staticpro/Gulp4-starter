@@ -1,11 +1,12 @@
 .community {
-  position: absolute;
-  top: 3%;
-  left: 2%;
   display: flex;
-
+  &__item {
+    margin-right: 28px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   &__link {
-    margin: 0;
     text-decoration: none;
     color: #ffffff;
     display: flex;
@@ -13,18 +14,11 @@
     align-items: center;
   }
   &__icon {
-    margin-right: 28px;
     fill: $nebula;
     width: 31px;
     height: 23px;
-
     &:hover {
       fill: white;
     }
   }
-
-
-
-
-
 }

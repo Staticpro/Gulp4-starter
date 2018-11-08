@@ -1,0 +1,14 @@
+.enter {
+  &__block {
+    display: flex;
+    flex: 1 0 380px;
+    max-width: 380px;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

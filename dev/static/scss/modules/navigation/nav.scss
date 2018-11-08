@@ -58,3 +58,18 @@
     fill: #9eaaab;
   }
 }
+.submenu {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-bottom: 25px;
+  }
+  &__link {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: $fiord;
+  }
+}
