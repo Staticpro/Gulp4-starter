@@ -1,0 +1,51 @@
+.technology {
+	&__list {
+		display: flex;
+		max-width: 480px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__item {
+		flex: 0 0 200px;
+		width: 200px;
+		margin-bottom: 30px;
+	}
+	&__title {
+		font-size: 16px;
+		font-family: $mediumFont;
+		color: $fiord;
+		margin-bottom: 20px;
+	}
+	&__skill-list {
+		margin-left: 20px;
+		display: flex;
+		flex-direction: column;
+
+	}
+	&__skill-item {
+		display: flex;
+		font-size: 16px;
+		align-items: center;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__skill-value {
+		display: flex;
+		flex: 0 0 46px;
+		border-radius: 5px;
+		overflow: hidden;
+		margin-left: auto;
+	}
+	&__skill-input {
+		padding-left: 10px;
+		flex: 1;
+		font: inherit;
+		line-height: 32px;
+		border: none;
+	}
+	&__skill-unit {
+		margin-left: 10px;
+	}
+}

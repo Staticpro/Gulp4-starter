@@ -45,11 +45,3 @@
     transform: translateY(-50%);
   }
 }
-
-%clearfix {
-  &:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-}

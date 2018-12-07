@@ -1,0 +1,82 @@
+.admin {
+	position: relative;
+	&__header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	&__header-wrapper {
+		padding: 0 30px;
+		display: flex;
+		background-color: $carribianGreen;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__header-title {
+		font-size: 28px;
+		line-height: 80px;
+		margin: 0;
+		color: #ffffff;
+		font-family: $mediumFont;
+	}
+	&__header-link {
+		font-family: $mediumFont;
+		font-size: 16px;
+		color: rgba(#fff, .7);
+		&:hover {
+			color: #ffffff;
+		}
+	}
+	&__panel {
+		position: absolute;
+		top: 10.9%;
+		left: 0;
+		width: 100%;
+	}
+	&__panel-list {
+		display: flex;
+		background-color: $cararra;
+	}
+	&__panel-title {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-family: $mediumFont;
+		line-height: 60px;
+		padding: 0 70px;
+		background-color: $cararra;
+		border-right: 2px solid #ffffff;
+		text-decoration: none;
+		color: $carribianGreen;
+	}
+	&__content {
+		box-sizing: border-box;
+		position: absolute;
+		width: 100%;
+		top: 19.4%;
+		left: 0;
+		padding: 40px 0 76px 30px;
+		background-color: rgba(#fff, .85);
+	}
+	&__content-title {
+		font-size: 21px;
+		font-family: $mediumFont;
+		color: $fiord;
+		margin-bottom: 30px;
+	}
+	&__button {
+		border: none;
+		border-radius: 5px;
+		line-height: 45px;
+		padding: 0 20px;
+		font-family: $mediumFont;
+		background-color: $carribianGreen;
+		color: #ffffff;
+		cursor: pointer;
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+
+	}
+}

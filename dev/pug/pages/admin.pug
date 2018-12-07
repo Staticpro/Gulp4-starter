@@ -1,0 +1,93 @@
+include ../mixins
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(content="" name="author")
+		meta(content="" name="description")
+		meta(content="" name="keywords")
+		meta(content="width=device-width, initial-scale=1" name="viewport")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		link(rel='stylesheet' href="static/css/main.css")
+
+		block title
+			title Панель Администрирования
+
+	body
+		.wrapper
+			.admin
+				.admin__bg
+					img(src="static/img/general/login-bg.jpg")
+				.admin__header
+					.admin__header-wrapper
+						h1.admin__header-title Панель администрирования
+						a(href="").admin__header-link Вернуться на сайт
+				.admin__panel
+					ul.admin__panel-list
+						li.admin__panel-item
+							a(href="#tab1").admin__panel-title Tab 1
+						li.admin__panel-item
+							a(href="#tab2").admin__panel-title Tab 2
+						li.admin__panel-item
+							a(href="#tab3").admin__panel-title Tab 3
+						li.admin__panel-item
+							a(href="#tab4").admin__panel-title Tab 4
+				.admin__content
+					.admin__content-title Страница "Обо мне"
+					.technology.admin__technology
+						ul.technology__list
+							li.technology__item
+								p.technology__title Frontend
+									ul.technology__skill-list
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name JavaScript
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+							li.technology__item
+								p.technology__title Frontend
+									ul.technology__skill-list
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name JavaScript
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+							li.technology__item
+								p.technology__title Frontend
+									ul.technology__skill-list
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name Html
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+										li.technology__skill-item
+											.technology__skill-name JavaScript
+											.technology__skill-value
+												input(type="text").technology__skill-input
+											.technology__skill-unit %
+				button(type="button").admin__button Сохранить
+

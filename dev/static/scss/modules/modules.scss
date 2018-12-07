@@ -9,6 +9,7 @@
 @import 'sections/article';
 @import 'sections/login';
 @import 'sections/enter';
+@import 'sections/admin';
 
 // Blocks
 @import "block/user";
@@ -17,6 +18,8 @@
 @import "block/skills";
 @import "block/contacts";
 @import "block/user-login";
+@import "block/technology";
+@import "block/tab";
 
 // Навигация
 @import 'navigation/nav';
